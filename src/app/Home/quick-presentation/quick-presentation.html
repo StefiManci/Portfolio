@@ -1,19 +1,178 @@
 <div class="min-h-screen flex items-center justify-center px-4">
   <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-6xl w-full h-[100vh]">
     <div class="grid grid-cols-6 grid-rows-6 gap-4 h-full">
-      <div class="bg-blue-500 col-span-4 row-span-2 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
-        Box 1
+      <div (mouseenter)="isHovered =true" (mouseleave)="isHovered=false"
+        class="relative col-span-4 group row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4">
+        <img src="" alt="Profile" class="w-24 h-24 rounded-full border border-black/20 shadow-sm object-cover z-10" />
+
+        @if(isHovered==false){
+        <div class="w-full h-10 flex items-center justify-center px-4 z-10">
+          <p class="text-center text-base leading-relaxed tracking-wide drop-shadow-sm">
+            I prioritize communication, collaboration, connecting, and growing together.
+          </p>
+        </div>
+        }
+
+        <img src="https://i.pravatar.cc/40?img=5" alt="Decor 1" class="absolute top-4 left-6 w-10 h-10 rounded-full border border-black/20 shadow-sm object-cover
+           opacity-0 -translate-y-5 pointer-events-none
+           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
+           transition-opacity transition-transform duration-500 ease-in-out" />
+        <img src="https://i.pravatar.cc/32?img=6" alt="Decor 2" class="absolute bottom-6 right-8 w-8 h-8 rounded-full border border-black/20 shadow-sm object-cover
+           opacity-0 -translate-y-5 pointer-events-none
+           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
+           transition-opacity transition-transform duration-500 ease-in-out" style="transition-delay: 100ms" />
+        <img src="https://i.pravatar.cc/36?img=7" alt="Decor 3" class="absolute top-16 right-16 w-9 h-9 rounded-full border border-black/20 shadow-sm object-cover
+           opacity-0 -translate-y-5 pointer-events-none
+           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
+           transition-opacity transition-transform duration-500 ease-in-out" style="transition-delay: 200ms" />
+        <img src="https://i.pravatar.cc/28?img=8" alt="Decor 4" class="absolute bottom-10 left-14 w-7 h-7 rounded-full border border-black/20 shadow-sm object-cover
+           opacity-0 -translate-y-5 pointer-events-none
+           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
+           transition-opacity transition-transform duration-500 ease-in-out" style="transition-delay: 300ms" />
+
+        @if(isHovered){
+        <a href="#" class="mt-4 px-6 py-2 border border-black text-black rounded-lg font-semibold
+          bg-white shadow-md
+          opacity-0 pointer-events-none
+          group-hover:opacity-100 group-hover:pointer-events-auto
+          transition duration-300 ease-in-out
+          hover:bg-black hover:text-white hover:shadow-lg hover:scale-105">
+          Get in touch
+        </a>
+
+        }
+
       </div>
-      <div class="bg-green-500 col-span-2 row-span-4 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
-        Box 2
-      </div>
-      <div class="bg-red-500 col-span-2 row-span-4 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
+
+
+
+      <div class="col-span-2 row-span-4 rounded-xl p-4 shadow-inner shadow-black/30 text-black font-bold flex flex-col items-start justify-center space-y-20">
+
+  <h1 class="text-2xl font-extrabold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent text-center bg-clip-text mb-6">
+    Passionate about cutting-edge tech
+  </h1>
+
+  <div class="overflow-hidden whitespace-nowrap w-full">
+  <div class="animate-marquee  space-x-6 flex text-lg font-semibold">
+    <span class="px-4 py-1 rounded-full flex">
+      <img src="React.png" height="5px" width="30px" alt="">
+      React
+    </span>
+    <span class="px-4 py-1 rounded-full flex">
+      <img src="Asp.Net.png" height="5px" width="30px" alt="">
+      Asp.Net
+    </span>
+    <span class="px-4 py-1 rounded-full flex">
+      <img src="Angular.png" height="5px" width="30px" alt="">
+      Angular
+    </span>
+    <span class="px-4 py-1 rounded-full flex">
+      <img src="Javascript.png" height="5px" width="30px" alt="">
+      JavaScript
+    </span>
+    <span class="px-4 py-1 rounded-full flex">
+      <img src="Typescript.png" height="5px" width="30px" alt="">
+      Typesctipt
+    </span>
+    <span class="px-4 py-1 rounded-full flex">
+      <img src="Node.png" height="5px" width="30px" alt="">
+      NodeJs
+    </span>
+   <span class="px-4 py-1 rounded-full flex ">
+      <img src="React.png" height="5px" width="30px" alt="">
+      React
+    </span>
+  </div>
+</div>
+
+
+  <div class="overflow-hidden whitespace-nowrap w-full">
+  <div class="animate-marquee2 flex space-x-6 text-lg font-semibold">
+    <span class="px-4 py-1 rounded-full flex ">
+      <img src="Aws.png" height="5px" width="30px" alt="">
+      Aws
+    </span>
+    <span class="px-4 py-1 rounded-full flex ">
+      <img src="Azure.png" height="5px" width="30px" alt="">
+      Azure
+    </span>
+   <span class="px-4 py-1 rounded-full flex ">
+      <img src="Jira.png" height="5px" width="30px" alt="">
+      Jira
+    </span>
+    <span class="px-4 py-1 rounded-full flex ">
+      <img src="Github.png" height="5px" width="30px" alt="">
+      Github
+    </span>
+     <span class="px-4 py-1 rounded-full flex ">
+      <img src="Mysql.png" height="5px" width="30px" alt="">
+      MySQL
+    </span>
+     <span class="px-4 py-1 rounded-full flex ">
+      <img src="Docker.png" height="5px" width="30px" alt="">
+      Docker
+    </span>
+    <span class="px-4 py-1 rounded-full flex ">
+      <img src="Aws.png" height="5px" width="30px" alt="">
+      Aws
+    </span>
+    
+  </div>
+</div>
+
+ <div class="overflow-hidden whitespace-nowrap w-full">
+  <div class="animate-marquee2 flex space-x-6 text-lg font-semibold">
+    <span class="px-4 py-1 rounded-full flex ">
+      <img src="VS.png" height="5px" width="30px" alt="">
+      Visual Studio
+    </span>
+    <span class="px-4 py-1 rounded-full flex ">
+      <img src="VsCode.png" height="5px" width="30px" alt="">
+      Visual Studio Code
+    </span>
+   <span class="px-4 py-1 rounded-full flex ">
+      <img src="Rider.ico" height="5px" width="30px" alt="">
+      Rider
+    </span>
+    <span class="px-4 py-1 rounded-full flex ">
+      <img src="Postman.png" height="5px" width="30px" alt="">
+      Postman
+    </span>
+     <span class="px-4 py-1 rounded-full flex ">
+      <img src="VS.png" height="5px" width="30px" alt="">
+      Visual Studio
+    </span>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div
+        class="col-span-2 row-span-4 rounded-xl p-4 shadow-inner shadow-black/30 text-white font-bold flex items-center justify-center">
         Box 3
       </div>
-      <div class="bg-purple-500 col-span-2 row-span-2 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
+      <div
+        class="col-span-2 row-span-2 rounded-xl p-4 shadow-inner shadow-black/30 text-white font-bold flex items-center justify-center">
         Box 4
       </div>
-      <div class="bg-pink-500 col-span-4 row-span-2 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
+      <div
+        class="col-span-4 row-span-2 rounded-xl p-4 shadow-inner shadow-black/30 text-white font-bold flex items-center justify-center">
         Box 6
       </div>
     </div>
