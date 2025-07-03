@@ -1,180 +1,339 @@
 <div class="min-h-screen flex items-center justify-center px-4">
   <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-6xl w-full h-[100vh]">
     <div class="grid grid-cols-6 grid-rows-6 gap-4 h-full">
-      <div (mouseenter)="isHovered =true" (mouseleave)="isHovered=false"
-        class="relative col-span-4 group row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4">
-        <img src="" alt="Profile" class="w-24 h-24 rounded-full border border-black/20 shadow-sm object-cover z-10" />
+      <div
+        (mouseenter)="isHovered =true"
+        (mouseleave)="isHovered=false"
+        class="relative col-span-4 group row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
+      >
+        <img
+          src=""
+          alt="Profile"
+          class="w-24 h-24 rounded-full border border-black/20 shadow-sm object-cover z-10"
+        />
 
         @if(isHovered==false){
         <div class="w-full h-10 flex items-center justify-center px-4 z-10">
-          <p class="text-center text-base leading-relaxed tracking-wide drop-shadow-sm">
-            I prioritize communication, collaboration, connecting, and growing together.
+          <p
+            class="text-center text-base leading-relaxed tracking-wide drop-shadow-sm"
+          >
+            I prioritize communication, collaboration, connecting, and growing
+            together.
           </p>
         </div>
         }
 
-        <img src="https://i.pravatar.cc/40?img=5" alt="Decor 1" class="absolute top-4 left-6 w-10 h-10 rounded-full border border-black/20 shadow-sm object-cover
-           opacity-0 -translate-y-5 pointer-events-none
-           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
-           transition-opacity transition-transform duration-500 ease-in-out" />
-        <img src="https://i.pravatar.cc/32?img=6" alt="Decor 2" class="absolute bottom-6 right-8 w-8 h-8 rounded-full border border-black/20 shadow-sm object-cover
-           opacity-0 -translate-y-5 pointer-events-none
-           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
-           transition-opacity transition-transform duration-500 ease-in-out" style="transition-delay: 100ms" />
-        <img src="https://i.pravatar.cc/36?img=7" alt="Decor 3" class="absolute top-16 right-16 w-9 h-9 rounded-full border border-black/20 shadow-sm object-cover
-           opacity-0 -translate-y-5 pointer-events-none
-           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
-           transition-opacity transition-transform duration-500 ease-in-out" style="transition-delay: 200ms" />
-        <img src="https://i.pravatar.cc/28?img=8" alt="Decor 4" class="absolute bottom-10 left-14 w-7 h-7 rounded-full border border-black/20 shadow-sm object-cover
-           opacity-0 -translate-y-5 pointer-events-none
-           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
-           transition-opacity transition-transform duration-500 ease-in-out" style="transition-delay: 300ms" />
+        <img
+          src="https://i.pravatar.cc/40?img=5"
+          alt="Decor 1"
+          class="absolute top-4 left-6 w-10 h-10 rounded-full border border-black/20 shadow-sm object-cover opacity-0 -translate-y-5 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-opacity transition-transform duration-500 ease-in-out"
+        />
+        <img
+          src="https://i.pravatar.cc/32?img=6"
+          alt="Decor 2"
+          class="absolute bottom-6 right-8 w-8 h-8 rounded-full border border-black/20 shadow-sm object-cover opacity-0 -translate-y-5 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-opacity transition-transform duration-500 ease-in-out"
+          style="transition-delay: 100ms"
+        />
+        <img
+          src="https://i.pravatar.cc/36?img=7"
+          alt="Decor 3"
+          class="absolute top-16 right-16 w-9 h-9 rounded-full border border-black/20 shadow-sm object-cover opacity-0 -translate-y-5 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-opacity transition-transform duration-500 ease-in-out"
+          style="transition-delay: 200ms"
+        />
+        <img
+          src="https://i.pravatar.cc/28?img=8"
+          alt="Decor 4"
+          class="absolute bottom-10 left-14 w-7 h-7 rounded-full border border-black/20 shadow-sm object-cover opacity-0 -translate-y-5 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-opacity transition-transform duration-500 ease-in-out"
+          style="transition-delay: 300ms"
+        />
 
         @if(isHovered){
-        <a href="#" class="mt-4 px-6 py-2 border border-black text-black rounded-lg font-semibold
-          bg-white shadow-md
-          opacity-0 pointer-events-none
-          group-hover:opacity-100 group-hover:pointer-events-auto
-          transition duration-300 ease-in-out
-          hover:bg-black hover:text-white hover:shadow-lg hover:scale-105">
+        <a
+          href="#"
+          class="mt-4 px-6 py-2 border border-black text-black rounded-lg font-semibold bg-white shadow-md opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-lg hover:scale-105"
+        >
           Get in touch
         </a>
 
         }
-
       </div>
 
+      <div
+        class="col-span-2 row-span-4 rounded-xl p-4 shadow-inner shadow-black/30 text-black font-bold flex flex-col items-start justify-center space-y-20"
+      >
+        <h1
+          class="text-2xl font-extrabold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent text-center bg-clip-text mb-6"
+        >
+          Passionate about cutting-edge tech
+        </h1>
 
+        <div class="overflow-hidden whitespace-nowrap w-full">
+          <div class="animate-marquee space-x-6 flex text-lg font-semibold">
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="React.png" height="5px" width="30px" alt="" />
+              React
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Asp.Net.png" height="5px" width="30px" alt="" />
+              Asp.Net
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Angular.png" height="5px" width="30px" alt="" />
+              Angular
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Javascript.png" height="5px" width="30px" alt="" />
+              JavaScript
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Typescript.png" height="5px" width="30px" alt="" />
+              Typesctipt
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Node.png" height="5px" width="30px" alt="" />
+              NodeJs
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="React.png" height="5px" width="30px" alt="" />
+              React
+            </span>
+          </div>
+        </div>
 
-      <div class="col-span-2 row-span-4 rounded-xl p-4 shadow-inner shadow-black/30 text-black font-bold flex flex-col items-start justify-center space-y-20">
+        <div class="overflow-hidden whitespace-nowrap w-full">
+          <div class="animate-marquee2 flex space-x-6 text-lg font-semibold">
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Aws.png" height="5px" width="30px" alt="" />
+              Aws
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Azure.png" height="5px" width="30px" alt="" />
+              Azure
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Jira.png" height="5px" width="30px" alt="" />
+              Jira
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Github.png" height="5px" width="30px" alt="" />
+              Github
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Mysql.png" height="5px" width="30px" alt="" />
+              MySQL
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Docker.png" height="5px" width="30px" alt="" />
+              Docker
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Aws.png" height="5px" width="30px" alt="" />
+              Aws
+            </span>
+          </div>
+        </div>
 
-  <h1 class="text-2xl font-extrabold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent text-center bg-clip-text mb-6">
-    Passionate about cutting-edge tech
+        <div class="overflow-hidden whitespace-nowrap w-full">
+          <div class="animate-marquee2 flex space-x-6 text-lg font-semibold">
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="VS.png" height="5px" width="30px" alt="" />
+              Visual Studio
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="VsCode.png" height="5px" width="30px" alt="" />
+              Visual Studio Code
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Rider.ico" height="5px" width="30px" alt="" />
+              Rider
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="Postman.png" height="5px" width="30px" alt="" />
+              Postman
+            </span>
+            <span class="px-4 py-1 rounded-full flex">
+              <img src="VS.png" height="5px" width="30px" alt="" />
+              Visual Studio
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-span-2 row-span-4 rounded-xl p-4 shadow-inner shadow-black/30 text-black font-bold flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800"
+      >
+        <h1
+          class="text-3xl bg-gradient-to-r from-white to-blue-500 bg-clip-text text-transparent mb-4 text-center"
+        >
+          Constantly Learning, Constantly Building
+        </h1>
+        <img
+          src="Programmer.png"
+          alt="Programmer at work"
+          class="rounded-xl shadow-lg w-full max-w-md object-cover mix-blend-lighten"
+        />
+      </div>
+
+      <div
+        class="col-span-2 row-span-2 rounded-2xl p-6 shadow-2xl bg-white/10 backdrop-blur-lg text-white font-semibold flex flex-col items-center justify-center relative space-y-6 border border-white/20"
+      >
+        <h2
+          class="text-2xl text-center bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent animate-pulse drop-shadow-lg"
+        >
+          Let's Connect! | Let`s Work and Grow Together
+        </h2>
+
+        <div class="flex items-center gap-3">
+          <button
+            (click)="copyEmail()"
+            class="px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white rounded-lg shadow-md transition-transform active:scale-95 flex items-center gap-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 16h8m-4-4h4m-6 8h6a2 2 0 002-2V8a2 2 0 00-2-2h-2.586A2 2 0 0112 5.414L10.586 4H8a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+            stefi.manci1&#64;gmail.com
+          </button>
+
+          @if (copied) {
+          <div class="text-green-400 animate-fade-in text-sm font-normal">
+            Copied!
+          </div>
+          }
+        </div>
+      </div>
+
+      <div
+  class="col-span-4 row-span-2 rounded-xl p-6 shadow-inner shadow-black/40 text-white font-bold flex flex-col items-center justify-center bg-black/50 backdrop-blur-2xl border border-white/10 space-y-6"
+>
+
+  <div class="relative w-full max-w-5xl overflow-hidden">
+  <div class="flex space-x-7 animate-scroll" style="width: max-content;">
+    <div
+      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+      title="An amazing single sentence describing Project 1"
+    >
+      Payment System Architecture
+    </div>
+
+    <div
+     class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+      title="An amazing single sentence describing Project 2"
+    >
+      E-commerce Platform Development
+    </div>
+
+    <div
+      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+      title="An amazing single sentence describing Project 3"
+    >
+      Banking Application Design and Implementation
+    </div>
+
+    <div
+    class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+      title="An amazing single sentence describing Project 4"
+    >
+      Microservices Architecture for Scalable Applications
+    </div>
+
+    <div
+     class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+      title="An amazing single sentence describing Project 5"
+    >
+      Upgrading Legacy Systems to Modern Frameworks
+    </div>
+
+    <div
+     class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+      title="An amazing single sentence describing Project 6"
+    >
+      Api Development for Mobile Applications
+    </div>
+
+    <!-- duplicate for infinite scroll -->
+    <div
+      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+      title="An amazing single sentence describing Project 1"
+    >
+      Payment System Architecture
+    </div>
+
+    <div
+      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+      title="An amazing single sentence describing Project 2"
+    >
+      E-commerce Platform Development
+    </div>
+
+    <div
+      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+      title="An amazing single sentence describing Project 3"
+    >
+      Banking Application Design and Implementation
+    </div>
+
+    <div
+     class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+    >
+      Microservices Architecture for Scalable Applications
+    </div>
+
+    <div
+      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+    >
+      Upgrading Legacy Systems to Modern Frameworks
+    </div>
+
+    <div
+     class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
+                 flex items-center justify-center text-white font-semibold text-center px-6
+                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+    >
+      Api Development for Mobile Applications
+    </div>
+  </div>
+</div>
+
+   <h1 class="text-3xl text-start bg-gradient-to-r from-white via-blue-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-lg">
+    What i have been doing lately
   </h1>
 
-  <div class="overflow-hidden whitespace-nowrap w-full">
-  <div class="animate-marquee  space-x-6 flex text-lg font-semibold">
-    <span class="px-4 py-1 rounded-full flex">
-      <img src="React.png" height="5px" width="30px" alt="">
-      React
-    </span>
-    <span class="px-4 py-1 rounded-full flex">
-      <img src="Asp.Net.png" height="5px" width="30px" alt="">
-      Asp.Net
-    </span>
-    <span class="px-4 py-1 rounded-full flex">
-      <img src="Angular.png" height="5px" width="30px" alt="">
-      Angular
-    </span>
-    <span class="px-4 py-1 rounded-full flex">
-      <img src="Javascript.png" height="5px" width="30px" alt="">
-      JavaScript
-    </span>
-    <span class="px-4 py-1 rounded-full flex">
-      <img src="Typescript.png" height="5px" width="30px" alt="">
-      Typesctipt
-    </span>
-    <span class="px-4 py-1 rounded-full flex">
-      <img src="Node.png" height="5px" width="30px" alt="">
-      NodeJs
-    </span>
-   <span class="px-4 py-1 rounded-full flex ">
-      <img src="React.png" height="5px" width="30px" alt="">
-      React
-    </span>
-  </div>
 </div>
 
 
-  <div class="overflow-hidden whitespace-nowrap w-full">
-  <div class="animate-marquee2 flex space-x-6 text-lg font-semibold">
-    <span class="px-4 py-1 rounded-full flex ">
-      <img src="Aws.png" height="5px" width="30px" alt="">
-      Aws
-    </span>
-    <span class="px-4 py-1 rounded-full flex ">
-      <img src="Azure.png" height="5px" width="30px" alt="">
-      Azure
-    </span>
-   <span class="px-4 py-1 rounded-full flex ">
-      <img src="Jira.png" height="5px" width="30px" alt="">
-      Jira
-    </span>
-    <span class="px-4 py-1 rounded-full flex ">
-      <img src="Github.png" height="5px" width="30px" alt="">
-      Github
-    </span>
-     <span class="px-4 py-1 rounded-full flex ">
-      <img src="Mysql.png" height="5px" width="30px" alt="">
-      MySQL
-    </span>
-     <span class="px-4 py-1 rounded-full flex ">
-      <img src="Docker.png" height="5px" width="30px" alt="">
-      Docker
-    </span>
-    <span class="px-4 py-1 rounded-full flex ">
-      <img src="Aws.png" height="5px" width="30px" alt="">
-      Aws
-    </span>
-    
-  </div>
-</div>
-
- <div class="overflow-hidden whitespace-nowrap w-full">
-  <div class="animate-marquee2 flex space-x-6 text-lg font-semibold">
-    <span class="px-4 py-1 rounded-full flex ">
-      <img src="VS.png" height="5px" width="30px" alt="">
-      Visual Studio
-    </span>
-    <span class="px-4 py-1 rounded-full flex ">
-      <img src="VsCode.png" height="5px" width="30px" alt="">
-      Visual Studio Code
-    </span>
-   <span class="px-4 py-1 rounded-full flex ">
-      <img src="Rider.ico" height="5px" width="30px" alt="">
-      Rider
-    </span>
-    <span class="px-4 py-1 rounded-full flex ">
-      <img src="Postman.png" height="5px" width="30px" alt="">
-      Postman
-    </span>
-     <span class="px-4 py-1 rounded-full flex ">
-      <img src="VS.png" height="5px" width="30px" alt="">
-      Visual Studio
-    </span>
-  </div>
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div
-        class="col-span-2 row-span-4 rounded-xl p-4 shadow-inner shadow-black/30 text-white font-bold flex items-center justify-center">
-        Box 3
-      </div>
-      <div
-        class="col-span-2 row-span-2 rounded-xl p-4 shadow-inner shadow-black/30 text-white font-bold flex items-center justify-center">
-        Box 4
-      </div>
-      <div
-        class="col-span-4 row-span-2 rounded-xl p-4 shadow-inner shadow-black/30 text-white font-bold flex items-center justify-center">
-        Box 6
-      </div>
     </div>
   </div>
 </div>

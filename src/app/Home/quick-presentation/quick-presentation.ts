@@ -9,4 +9,18 @@ import { Component } from '@angular/core';
 export class QuickPresentation {
 
   isHovered: boolean = false;
+
+  email:string ="stefi.manci1@gmail.com"
+  copied:boolean = false;
+
+  copyEmail() {
+    navigator.clipboard.writeText(this.email).then(() => {
+      this.copied = true;
+      setTimeout(() => {
+        this.copied = false;
+      }, 2000);
+    }).catch(err => {
+      console.error('Failed to copy email: ', err);
+    });
+}
 }
