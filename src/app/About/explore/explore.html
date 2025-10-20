@@ -1,18 +1,33 @@
 <div class="min-h-screen mt-10 flex items-center justify-center px-4">
-  <div class="bg-white p-8 rounded-2xl shadow-2xl  w-4/6 h-[80vh]">
+  <div class="bg-white p-8 rounded-2xl shadow-2xl w-4/6 h-[80vh]">
     <div class="grid grid-cols-6 grid-rows-2 gap-4 h-full">
+      <div
+        class="col-span-6 row-span-1 rounded-xl p-4 shadow-inner shadow-green-200 text-black font-bold flex items-center justify-center"
+      >
+        Explore & Find Out More About Me!
+      </div>
+      <div
+        class="col-span-2 row-span-2 rounded-xl shadow-inner shadow-green-200 text-black font-bold flex flex-col items-center justify-center hover:shadow-green-400 transition duration-300 ease-in-out cursor-pointer"
+        (click)="navigateOnClick('/')"
+      >
+        <app-tool-preview
+          [isMouseOver]="isMouseOver"
+          [onMouseEnter]="onMouseEnter"
+          [onMouseLeave]="onMouseLeave"
+        ></app-tool-preview>
+      </div>
 
-      <div class="bg-green-500 col-span-6 row-span-1 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
-        Box 1
+      <div
+        class="col-span-2 row-span-2 rounded-xl shadow-inner shadow-red-200 text-black font-bold flex flex-col items-center justify-center hover:shadow-red-400 transition duration-300 ease-in-out cursor-pointer"
+        (click)="navigateOnClick('/')"
+      >
+        <app-builds-preview></app-builds-preview>
       </div>
-      <div class="bg-red-500 col-span-2 row-span-2 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
-        Box 2
-      </div>
-      <div class="bg-green-500 col-span-2 row-span-2 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
-        Box 3
-      </div>
-      <div class="bg-green-500 col-span-2 row-span-2 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
-        Box 4
+      <div
+        class="col-span-2 row-span-2 rounded-xl shadow-inner shadow-blue-200 text-black font-bold flex flex-col items-center justify-center hover:shadow-blue-400 transition duration-300 ease-in-out cursor-pointer"
+        (click)="navigateOnClick('/')"
+      >
+        <app-work-in-progress-preview></app-work-in-progress-preview>
       </div>
     </div>
   </div>

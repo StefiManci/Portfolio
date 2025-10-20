@@ -16,7 +16,6 @@ export class Experience {
   boxHeight = 0;
 
   ngAfterViewInit() {
-    // Get Box 3 position and height
     const box = this.box3.nativeElement as HTMLElement;
     this.boxTop = box.offsetTop;
     this.boxHeight = box.offsetHeight;
@@ -24,7 +23,7 @@ export class Experience {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const scrollY = window.scrollY + window.innerHeight / 2; // adjust to center
+    const scrollY = window.scrollY + window.innerHeight / 2; 
     if (scrollY < this.boxTop) {
       this.scrollProgress = 0;
     } else if (scrollY > this.boxTop + this.boxHeight) {

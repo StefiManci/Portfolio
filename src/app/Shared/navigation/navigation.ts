@@ -20,7 +20,7 @@ onMouseEnter() {
 onMouseLeave() {
   this.closeTimeout = setTimeout(() => {
     this.isDropdownOpen = false;
-  }, 400); // Adjust delay as needed (e.g., 400ms)
+  }, 400);
 }
 
 }
