@@ -12,6 +12,7 @@ export class BuildsPreview {
   "Hi there!Can i grab your attention for a moment?",
   'Thank You!',
   'I will show a preview of what I can build and love to do so!',
+  'I build systems that are:',
   'User-friendly',
   'Scalable',
   'Robust',
@@ -22,7 +23,17 @@ export class BuildsPreview {
   'Reliable'
  ];
 
- softwareWords: string[] = [];
+ softwareWords: string[] = [
+    "E-commerce Platform",
+    "Customer Relationship Management System",
+    "Financial Management System",
+    "Portfolio or Personal Website",
+    "SaaS Platform",
+    "API Service",
+    "Dashboard or Admin Panel",
+    "Everything that i architect!",
+    "Everything that i architect!"
+  ];
 
 
 
@@ -40,6 +51,7 @@ export class BuildsPreview {
         this.seconds++;
         if (this.seconds % 2 === 0) {
         this.currentWordIndex++;
+        console.log(this.currentWordIndex);
         if (this.currentWordIndex >= this.titleWords.length) {
           clearInterval(intervalId);
           this.currentWordIndex = 0;
@@ -50,7 +62,10 @@ export class BuildsPreview {
       if (this.isShowRunning == false) {
         clearInterval(intervalId);
       }
+
     }, 1000);
+
+    console.log(this.currentWordIndex);
   }
 
   onMouseOut() {
