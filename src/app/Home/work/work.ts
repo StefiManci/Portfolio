@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ProjectPreview } from "./project-preview/project-preview";
 import { ProjectPreviewInfo } from "./project-preview-info/project-preview-info";
 
@@ -12,6 +12,8 @@ export class Work {
 
   isDisplaying :number = 0;
 
+  @Output() projectOnDisplay = new EventEmitter<number>();
+
   onClick(event: Event): void {
     
     if(this.isDisplaying>=0 && this.isDisplaying<3) {
@@ -19,6 +21,7 @@ export class Work {
     }else{
       this.isDisplaying = 0;
     }
-    console.log(this.isDisplaying);
+
+    this.projectOnDisplay.emit(this.isDisplaying);
   }
 }

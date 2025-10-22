@@ -68,3 +68,7 @@ body {
 .animate-gradient {
   animation: gradientShift 5s ease infinite;
 }
+
+html, body {
+  overflow-x: hidden;
+}

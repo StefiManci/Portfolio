@@ -1,2 +1,13 @@
-<app-work></app-work>
+<app-work (projectOnDisplay)="onProjectChange($event)"></app-work>
+<app-project-details
+  [project]="projectNumber"
+  [Progress]="Progress"
+  [Story]="Story"
+  [LessonsLearned]="LessonsLearned"
+  [Difficulties]="Difficulties"
+  [Purpose]="Purpose"
+  [BuildWith]="BuildWith"
+  [Duration]="Duration"
+  [ProjectTitle]="ProjectTitle"
+></app-project-details>
 <app-footer></app-footer>
