@@ -30,7 +30,8 @@ export const routes: Routes = [
     {
         path:"Skills",
         component:Skills
-    }
+    },
+    
     
 
 ];

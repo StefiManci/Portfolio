@@ -8,7 +8,11 @@
           <span>Work</span>
           <span
             class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-grey-500 to-red-500 animate-gradient bg-[length:200%_200%]"
-            style="margin-left: 12px; transform: skewX(-10deg); display: inline-block;"
+            style="
+              margin-left: 12px;
+              transform: skewX(-10deg);
+              display: inline-block;
+            "
           >
             and Progress
           </span>
@@ -17,13 +21,17 @@
       <div
         class="relative col-span-4 group row-span-3 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
         (click)="onClick($event)"
-        >
-        <app-project-preview [projectNumber]="isDisplaying"></app-project-preview>
+      >
+        <app-project-preview
+          [projectNumber]="isDisplaying"
+        ></app-project-preview>
       </div>
       <div
         class="relative col-span-2 group row-span-3 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
       >
-        <app-project-preview-info [projectNumber]="isDisplaying"></app-project-preview-info>
+        <app-project-preview-info
+          [projectNumber]="isDisplaying"
+        ></app-project-preview-info>
       </div>
     </div>
   </div>

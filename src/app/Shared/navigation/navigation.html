@@ -1,52 +1,113 @@
-<nav class="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] max-w-6xl px-6 py-4 rounded-full bg-white/40 backdrop-blur-xl border border-black/10 shadow-xl flex items-center justify-between z-50">
-
+<nav
+  class="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] max-w-6xl px-6 py-4 rounded-full bg-white/40 backdrop-blur-xl border border-black/10 shadow-xl flex items-center justify-between z-50"
+>
   <div class="flex items-center space-x-3">
-    <img src="" alt="Profile" class="w-10 h-10 rounded-full border border-black/20 shadow-sm" />
+    <img
+      src=""
+      alt="Profile"
+      class="w-10 h-10 rounded-full border border-black/20 shadow-sm"
+    />
     <span class="text-gray-800 font-semibold text-lg">Stefi Manci</span>
   </div>
 
   <div class="flex items-center space-x-8">
-    <a href="#" class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300">Home</a>
-    <a routerLink="/About" class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300">About</a>
-    <a routerLink="/Projects" class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300">Projects</a>
-    <a routerLink="/Skills" class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300">Skills</a>
-<div
-  class="relative"
-  (mouseenter)="onMouseEnter()"
-  (mouseleave)="onMouseLeave()"
->
-  <a
-    class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300 cursor-pointer"
-  >
-    More
-  </a>
-@if (isDropdownOpen) {
-  <div
-    class="absolute top-full flex right-0 mt-2 bg-white shadow-lg rounded-lg border border-black/10 w-auto z-50 p-4 space-y-4 transition-opacity duration-200"
+    <a
+      routerLink="/"
+      routerLinkActive="text-blue-600 underline"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300"
+      >Home</a
+    >
+    <a
+      routerLink="/About"
+      routerLinkActive="text-blue-600 underline"
+      class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300"
+      >About</a
+    >
+    <a
+      routerLink="/Projects"
+      routerLinkActive="text-blue-600 underline"
+      class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300"
+      >Projects</a
+    >
+    <a
+      routerLink="/Skills"
+      routerLinkActive="text-blue-600 underline"
+      class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300"
+      >Skills</a
+    >
+    <div
+      class="relative"
+      (mouseenter)="onMouseEnter()"
+      (mouseleave)="onMouseLeave()"
+    >
+      <a
+        routerLink="/More"
+        routerLinkActive="text-blue-600 underline"
+        class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300 cursor-pointer"
+      >
+        More
+      </a>
+      @if (isDropdownOpen) {
+      <div
+        class="absolute top-full flex right-0 mt-2 bg-white shadow-lg rounded-lg border border-black/10 w-auto z-50 p-4 space-y-4 transition-opacity duration-200"
+      >
+        <a
+          routerLink="/guestbook"
+          class="relative flex items-center w-50 h-50 space-x-3 hover:bg-gray-100 p-2 rounded transition"
+        >
+          <img
+            src="placeholder.jpg"
+            alt="Gallery"
+            class="w-full z-2 hover:z-0 h-full object-cover rounded"
+          />
+          <span class="text-gray-700 font-medium z-1 absolute left-20"
+            >Comming Soon</span
+          >
+        </a>
 
-  >
-    <a routerLink="/guestbook" class="relative flex items-center w-50 h-50 space-x-3 hover:bg-gray-100 p-2 rounded transition">
-      <img src="placeholder.jpg" alt="Gallery" class="w-full z-2 hover:z-0 h-full object-cover rounded" />
-      <span class="text-gray-700 font-medium z-1 absolute left-20">Guest-Book</span>
-    </a>
+        <a
+          routerLink="/bucketlist"
+          class="relative flex items-center w-50 h-50 space-x-3 hover:bg-gray-100 p-2 rounded transition"
+        >
+          <img
+            src="placeholder.jpg"
+            alt="Blog"
+            class="w-full z-2 hover:z-0 h-full object-cover rounded"
+          />
+          <span class="text-gray-700 font-medium z-1 absolute left-20">CV</span>
+        </a>
 
-    <a routerLink="/bucketlist" class="relative flex items-center w-50  h-50 space-x-3 hover:bg-gray-100 p-2 rounded transition">
-      <img src="placeholder.jpg" alt="Blog" class="w-full z-2 hover:z-0 h-full object-cover rounded" />
-      <span class="text-gray-700 font-medium z-1 absolute left-20 ">Bucket-List</span>
-    </a>
-
-      <div class="flex flex-col gap-4 justify-center place-content-center items-center w-50 h-50 space-x-3 p-5 rounded transition">
-        <div routerLink="/About" class="cursor-pointer h-10 rounded-2xl flex justify-center items-center w-full m-1 bg-gray-400">Links</div>
-        <div routerLink="/About" class="cursor-pointer h-10 rounded-2xl flex justify-center items-center w-full m-1 bg-gray-400">Tools</div>
-        <div routerLink="/About" class="cursor-pointer h-10 rounded-2xl flex justify-center items-center w-full m-1 bg-gray-400" >Journey</div>
+        <div
+          class="flex flex-col gap-4 justify-center place-content-center items-center w-50 h-50 space-x-3 p-5 rounded transition"
+        >
+          <div
+            routerLink="/About"
+            class="cursor-pointer h-10 rounded-2xl flex justify-center items-center w-full m-1 bg-white shadow-lg hover:bg-blue-400 transition"
+          >
+            Abilities
+          </div>
+          <div
+            routerLink="/About"
+            class="cursor-pointer h-10 rounded-2xl flex justify-center items-center w-full m-1 bg-white shadow-lg hover:bg-blue-400 transition"
+          >
+            Tools
+          </div>
+          <div
+            routerLink="/About"
+            class="cursor-pointer h-10 rounded-2xl flex justify-center items-center w-full m-1 bg-white shadow-lg hover:bg-blue-400 transition"
+          >
+            Journey
+          </div>
+        </div>
       </div>
+      }
+    </div>
+    <a
+      routerLink="/Contact"
+      routerLinkActive="text-blue-600 underline"
+      class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300"
+      >Book a Call</a
+    >
   </div>
-}
-  
-
-
-</div>
-    <a routerLink="/Contact" class="text-gray-800 font-medium hover:text-blue-600 hover:underline underline-offset-4 transition duration-300">Book a Call</a>
-  </div>
-
 </nav>

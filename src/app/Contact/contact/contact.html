@@ -1,14 +1,36 @@
-<div class="min-h-screen mt-10 flex items-center justify-center px-4">
+<div class="min-h-screen mt-30 flex items-center justify-center px-4">
   <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-6xl w-full h-[100vh]">
     <div class="grid grid-cols-6 grid-rows-6 gap-4 h-full">
-      <div class="bg-blue-500 col-span-6 row-span-1 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
-        Box 1
+      <div
+        class="col-span-6 row-span-1 rounded-xl p-6 shadow-md flex items-center justify-center"
+      >
+        <h1 class="text-3xl font-bold text-gray-800">Let's Get In Touch</h1>
       </div>
-      <div class="bg-green-500 col-span-6 row-span-1 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
-        Box 2
+      <div
+        class="col-span-6 row-span-1 rounded-xl p-6 shadow-md flex flex-col md:flex-row gap-4"
+      >
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="flex-1 p-3 rounded-md border border-gray-300 text-gray-800 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+        />
+        <input
+          type="text"
+          placeholder="Subject"
+          class="flex-1 p-3 rounded-md border border-gray-300 text-gray-800 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+        />
       </div>
-      <div class="bg-red-500 col-span-6 row-span-4 rounded-xl p-4 shadow-md text-white font-bold flex items-center justify-center">
-        Box 3
+      <div class="col-span-6 row-span-4 rounded-xl p-6 shadow-md flex flex-col">
+        <textarea
+          placeholder="Your Message"
+          class="flex-1 w-full p-3 rounded-md border border-gray-300 text-gray-800 focus:ring-2 focus:ring-blue-400 focus:outline-none resize-none mb-4"
+        ></textarea>
+        <button
+          type="submit"
+          class="self-end bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+        >
+          Send
+        </button>
       </div>
     </div>
   </div>
