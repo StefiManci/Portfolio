@@ -16,24 +16,215 @@
         </div>
       </div>
       <div
-        class="relative col-span-4 group row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
+        class="relative col-span-4 group row-span-2 p-2 rounded-xl shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
       >
-        Box 2
+        <div class="h-full w-full flex rounded-lg p-4">
+          <div
+            class="h-full w-1/4 rounded-lg p-4 flex flex-col space-y-3 overflow-y-auto scrollbar-thin scrollbar-thumb-amber-600 scrollbar-track-amber-300"
+          >
+            <button
+              class="py-2 px-3 bg-white/80 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              (click)="selectAbility('E-Commerce Stores')"
+            >
+              E-Commerce Stores
+            </button>
+            <button
+              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              (click)="selectAbility('Customer Portals / CRM System')"
+            >
+              Customer Portals / CRM System
+            </button>
+            <button
+              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              (click)="selectAbility('Analytics Dashboards')"
+            >
+              Analytics Dashboards
+            </button>
+            <button
+              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              (click)="selectAbility('Authentication & User Management Systems')"
+            >
+              Authentication & User Management Systems
+            </button>
+            <button
+              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              (click)="selectAbility('RESTful & GraphQL APIs')"
+            >
+              RESTful & GraphQL APIs
+            </button>
+            <button
+              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              (click)="selectAbility('Microservices Architecture Projects')"
+            >
+              Microservices Architecture Projects
+            </button>
+            <button
+              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              (click)="selectAbility('Banking & FinTech Platforms')"
+            >
+              Banking & FinTech Platforms
+            </button>
+            <button
+              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              (click)="selectAbility('Saas Products')"
+            >
+              Saas Products
+            </button>
+            <button
+              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              (click)="selectAbility('Web & Mobile Applications')"
+            >
+              Web & Mobile Applications
+            </button>
+          </div>
+
+          @if (chosenAbility ==="") {
+          <div
+            class="h-full w-3/4 rounded-lg p-6 text-black flex flex-col justify-center items-center"
+          >
+            <h2 class="text-2xl font-bold mb-2">Welcome</h2>
+            <p class="text-blue-600 text-center">
+              Select a section on the left to see more information.
+            </p>
+          </div>
+          } @else {
+          <div
+            class="h-full w-3/4 rounded-lg p-6 text-white flex flex-col justify-start items-center"
+          >
+            <h2 class="text-3xl font-bold mb-4 text-blue-500">
+              {{chosenAbility}}
+            </h2>
+            <p class="text-lg leading-relaxed text-black/90">
+              {{ abilityDescription }}
+            </p>
+          </div>
+          }
+        </div>
       </div>
       <div
-        class="relative col-span-2 group row-span-4 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
+        class="relative col-span-2 row-span-5 rounded-xl p-6 shadow-inner shadow-black/30 bg-white/60 backdrop-blur-md text-gray-900 font-semibold overflow-hidden"
       >
-        Box 3
+        <h2 class="text-xl font-bold mb-2 text-center">My Tools</h2>
+
+        <div class="relative w-full h-full">
+          <div
+            class="absolute w-16 h-16 top-[10%] left-[15%] flex items-center justify-center rounded-full bg-blue-100 hover:bg-blue-200 transition transform hover:-translate-y-2 cursor-pointer"
+          >
+            <img
+              src="/assets/icons/visual-studio.svg"
+              alt="Visual Studio"
+              class="w-10 h-10"
+            />
+          </div>
+          <div
+            class="absolute w-16 h-16 top-[40%] left-[60%] flex items-center justify-center rounded-full bg-blue-50 hover:bg-blue-100 transition transform hover:-translate-y-2 cursor-pointer"
+          >
+            <img src="/assets/icons/jira.svg" alt="Jira" class="w-10 h-10" />
+          </div>
+          <div
+            class="absolute w-16 h-16 top-[70%] left-[25%] flex items-center justify-center rounded-full bg-pink-100 hover:bg-pink-200 transition transform hover:-translate-y-2 cursor-pointer"
+          >
+            <img src="/assets/icons/figma.svg" alt="Figma" class="w-10 h-10" />
+          </div>
+          <div
+            class="absolute w-16 h-16 top-[20%] left-[70%] flex items-center justify-center rounded-full bg-orange-100 hover:bg-orange-200 transition transform hover:-translate-y-2 cursor-pointer"
+          >
+            <img
+              src="/assets/icons/postman.svg"
+              alt="Postman"
+              class="w-10 h-10"
+            />
+          </div>
+          <div
+            class="absolute w-16 h-16 top-[55%] left-[40%] flex items-center justify-center rounded-full bg-blue-200 hover:bg-blue-300 transition transform hover:-translate-y-2 cursor-pointer"
+          >
+            <img
+              src="/assets/icons/trello.svg"
+              alt="Trello"
+              class="w-10 h-10"
+            />
+          </div>
+        </div>
       </div>
+
       <div
-        class="relative col-span-4 group row-span-3 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
+        class="relative col-span-4 row-span-3 rounded-xl p-6 bg-white/60 backdrop-blur-md shadow-inner shadow-black/20 text-gray-900 font-semibold flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6"
       >
-        Box 4
+        <div
+          class="w-full md:w-1/2 h-48 md:h-64 bg-gray-300 rounded-lg flex items-center justify-center"
+        >
+          <span class="text-gray-500 italic">Project Screenshot Here</span>
+        </div>
+        <div class="flex-1 flex flex-col items-start justify-center space-y-3">
+          <h2 class="text-2xl font-bold">Current Project</h2>
+          <p class="text-gray-800/90 leading-relaxed">
+            I’m currently building a full-stack web application that will
+            streamline task management and project tracking with a modern,
+            responsive interface.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span
+              class="px-3 py-1 bg-blue-200 text-blue-800 rounded-full text-sm"
+              >Angular</span
+            >
+            <span
+              class="px-3 py-1 bg-green-200 text-green-800 rounded-full text-sm"
+              >.NET Core</span
+            >
+            <span
+              class="px-3 py-1 bg-yellow-200 text-yellow-800 rounded-full text-sm"
+              >MySQL</span
+            >
+          </div>
+
+          <p class="text-gray-600 italic mt-2">
+            Stay tuned — more updates coming soon!
+          </p>
+        </div>
       </div>
+
       <div
-        class="relative col-span-6 group row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
+        class="relative col-span-6 row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 bg-white/70 backdrop-blur-md text-gray-900 font-semibold flex flex-col items-center justify-center space-y-6"
       >
-        Box 5
+        <h2 class="text-2xl font-bold mb-4">CV & Documents</h2>
+
+        <div
+          class="flex flex-col md:flex-row gap-6 w-full justify-center items-center"
+        >
+          <a
+            href="/assets/Stefi_Manci_CV.pdf"
+            download
+            class="bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition"
+          >
+            Download CV
+          </a>
+          <div class="flex flex-col md:flex-row gap-3">
+            <a
+              href="/assets/certificate1.pdf"
+              target="_blank"
+              download
+              class="bg-green-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-green-700 transition"
+            >
+              React Udemy Certificate
+            </a>
+            <a
+              href="/assets/certificate2.pdf"
+              target="_blank"
+              download
+              class="bg-green-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-green-700 transition"
+            >
+              Angular Udemy Certificate
+            </a>
+            <a
+              href="/assets/certificate3.pdf"
+              target="_blank"
+              download
+              class="bg-green-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-green-700 transition"
+            >
+              Full Stack Web Development Certificate
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
