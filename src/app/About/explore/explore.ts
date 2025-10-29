@@ -16,8 +16,8 @@ export class Explore {
 
   isMouseOver: boolean = false;
 
-  navigateOnClick(url: string) {
-    this.router.navigate([url]);
+  navigateOnClick(url: string , fragment?: string) {
+    this.router.navigate([url], { fragment });
   }
 
   onMouseEnter(event: MouseEvent) {
