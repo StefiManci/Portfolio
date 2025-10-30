@@ -33,7 +33,12 @@ journeyData: ChartConfiguration<'line'>['data'] = {
     maintainAspectRatio: false,
     plugins: {
       legend: { display: false },
-      tooltip: { enabled: true },
+      tooltip: { enabled: true, callbacks:{
+         label: function(context) {
+          const customLabels = ['Started', 'Progress', 'Review', 'Completed'];
+          return customLabels[context.dataIndex];
+        }
+      }},
     },
     scales: {
       x: { title: { display: true, text: 'Year' } },
