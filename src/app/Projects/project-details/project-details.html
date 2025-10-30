@@ -30,16 +30,21 @@
         </div>
 
         <h2 class="text-2xl font-bold text-center">{{ProjectTitle}}</h2>
-        <div class="text-center">
-          <p class="text-sm uppercase text-gray-600 tracking-wide">
-            Built With
-          </p>
-          <p class="text-lg font-medium">{{BuildWith}}</p>
+        <div class="w-full flex justify-evenly items-center">
+          <div class="text-center">
+            <p class="text-sm uppercase text-gray-600 tracking-wide">
+              Built With
+            </p>
+            <p class="text-lg font-medium">{{BuildWith}}</p>
+          </div>
+          <div class="text-center">
+            <p class="text-sm uppercase text-gray-600 tracking-wide">
+              Duration
+            </p>
+            <p class="text-lg font-medium">{{Duration}}</p>
+          </div>
         </div>
-        <div class="text-center">
-          <p class="text-sm uppercase text-gray-600 tracking-wide">Duration</p>
-          <p class="text-lg font-medium">{{Duration}}</p>
-        </div>
+
         <div class="text-center">
           <p class="text-sm uppercase text-gray-600 tracking-wide">Purpose</p>
           <p class="text-lg font-medium">{{Purpose}}</p>
@@ -48,7 +53,7 @@
           class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl text-center"
         >
           <div
-            class="p-4 bg-white/40 rounded-lg shadow-inner border border-white/30"
+            class="p-4 bg-white/40 rounded-lg shadow-inner border border-white/30 max-h-40 overflow-y-auto"
           >
             <p class="text-sm uppercase text-gray-600 tracking-wide">
               Project Story
@@ -58,7 +63,7 @@
             </p>
           </div>
           <div
-            class="p-4 bg-white/40 rounded-lg shadow-inner border border-white/30"
+            class="p-4 bg-white/40 rounded-lg shadow-inner border border-white/30 max-h-40 overflow-y-auto"
           >
             <p class="text-sm uppercase text-gray-600 tracking-wide">
               What I Learned
@@ -68,7 +73,7 @@
             </p>
           </div>
           <div
-            class="p-4 bg-white/40 rounded-lg shadow-inner border border-white/30"
+            class="p-4 bg-white/40 rounded-lg shadow-inner border border-white/30 max-h-40 overflow-y-auto"
           >
             <p class="text-sm uppercase text-gray-600 tracking-wide">
               Difficulties I Had
@@ -77,17 +82,6 @@
               {{Difficulties}}
             </p>
           </div>
-        </div>
-        <div class="mt-4 w-full">
-          <p
-            class="text-sm uppercase text-gray-600 tracking-wide text-center mb-2"
-          >
-            Route
-          </p>
-          <div class="w-full bg-gray-200 rounded-full h-2">
-            <div class="bg-blue-500 h-2 rounded-full w-3/4"></div>
-          </div>
-          <p class="text-xs text-center mt-1">{{Progress}} Complete</p>
         </div>
       </div>
     </div>

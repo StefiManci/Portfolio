@@ -4,19 +4,23 @@
   >
     <div class="flex justify-center gap-6 mb-8">
       <button
-        class="px-6 py-2 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
+        [class]="'px-6 py-2 rounded-xl text-black font-semibold transition ' + (isDisplaying === 'Technical' ? 'bg-blue-500' : 'bg-white shadow-sm shadow-black')"
+        (click)="setIsDisplaying('Technical')"
       >
         Technical Skills
       </button>
       <button
-        class="px-6 py-2 rounded-xl bg-gray-200 text-gray-800 font-semibold hover:bg-gray-300 transition"
+        [class]="'px-6 py-2 rounded-xl text-gray-800 font-semibold transition ' +(isDisplaying ==='Personal' ?'bg-blue-500' : 'bg-white shadow-sm shadow-black' )"
+        (click)="setIsDisplaying('Personal')"
       >
         Personal Skills
       </button>
     </div>
+    @if(isDisplaying === 'Technical'){
     <div class="grid grid-cols-3 gap-6 flex-1">
       <div
         class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        (click)="setChosenSkill('ASP.NET')"
       >
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aspnet/aspnet-original.svg"
@@ -26,6 +30,7 @@
       </div>
       <div
         class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        (click)="setChosenSkill('Node.js + Express')"
       >
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
@@ -35,6 +40,7 @@
       </div>
       <div
         class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        (click)="setChosenSkill('React')"
       >
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -44,6 +50,7 @@
       </div>
       <div
         class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        (click)="setChosenSkill('Angular')"
       >
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
@@ -53,6 +60,7 @@
       </div>
       <div
         class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        (click)="setChosenSkill('React Native')"
       >
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -62,6 +70,7 @@
       </div>
       <div
         class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        (click)="setChosenSkill('SQL Server')"
       >
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
@@ -71,6 +80,7 @@
       </div>
       <div
         class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        (click)="setChosenSkill('MySQL')"
       >
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
@@ -80,6 +90,7 @@
       </div>
       <div
         class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        (click)="setChosenSkill('Tailwind CSS')"
       >
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
@@ -89,6 +100,7 @@
       </div>
       <div
         class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        (click)="setChosenSkill('Framer Motion')"
       >
         <img
           src="https://raw.githubusercontent.com/framer/motion/main/logo/motion-icon.svg"
@@ -97,12 +109,104 @@
         <p class="font-semibold">Framer Motion</p>
       </div>
     </div>
+    }@else {
+    <div class="grid grid-cols-3 gap-6 flex-1">
+      <div
+        class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        (click)="setChosenSkill('Problem Solving')"
+      >
+        <h3 class="text-2xl font-bold">Problem Solving</h3>
+        <p class="mt-2 text-sm opacity-90">
+          Analytical thinking & creative debugging
+        </p>
+      </div>
+
+      <div
+        class="bg-gradient-to-br from-green-600 to-emerald-800 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        (click)="setChosenSkill('Communication')"
+      >
+        <h3 class="text-2xl font-bold">Communication</h3>
+        <p class="mt-2 text-sm opacity-90">Clear and confident collaboration</p>
+      </div>
+
+      <div
+        class="bg-gradient-to-br from-cyan-500 to-blue-700 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        (click)="setChosenSkill('Teamwork')"
+      >
+        <h3 class="text-2xl font-bold">Teamwork</h3>
+        <p class="mt-2 text-sm opacity-90">
+          Working effectively within diverse teams
+        </p>
+      </div>
+
+      <div
+        class="bg-gradient-to-br from-orange-500 to-amber-700 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        (click)="setChosenSkill('Adaptability')"
+      >
+        <h3 class="text-2xl font-bold">Adaptability</h3>
+        <p class="mt-2 text-sm opacity-90">
+          Quick to learn and adjust to new tech
+        </p>
+      </div>
+
+      <div
+        class="bg-gradient-to-br from-purple-600 to-violet-800 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        (click)="setChosenSkill('Time Management')"
+      >
+        <h3 class="text-2xl font-bold">Time Management</h3>
+        <p class="mt-2 text-sm opacity-90">
+          Efficient planning and meeting deadlines
+        </p>
+      </div>
+
+      <div
+        class="bg-gradient-to-br from-pink-600 to-rose-800 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        (click)="setChosenSkill('Leadership')"
+      >
+        <h3 class="text-2xl font-bold">Leadership</h3>
+        <p class="mt-2 text-sm opacity-90">
+          Motivating and guiding teams effectively
+        </p>
+      </div>
+
+      <div
+        class="bg-gradient-to-br from-teal-500 to-cyan-700 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        (click)="setChosenSkill('Critical Thinking')"
+      >
+        <h3 class="text-2xl font-bold">Critical Thinking</h3>
+        <p class="mt-2 text-sm opacity-90">
+          Analyzing problems from multiple angles
+        </p>
+      </div>
+
+      <div
+        class="bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        (click)="setChosenSkill('Creativity')"
+      >
+        <h3 class="text-2xl font-bold">Creativity</h3>
+        <p class="mt-2 text-sm opacity-90">
+          Innovative approaches to design and logic
+        </p>
+      </div>
+
+      <div
+        class="bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        (click)="setChosenSkill('Attention to Detail')"
+      >
+        <h3 class="text-2xl font-bold">Attention to Detail</h3>
+        <p class="mt-2 text-sm opacity-90">
+          Precision in code, design, and documentation
+        </p>
+      </div>
+    </div>
+    }
   </div>
 </div>
 <div class="min-h-screen mt-10 flex items-center justify-center px-4">
   <div
     class="bg-white p-8 rounded-2xl shadow-2xl max-w-6xl w-full h-[100vh] flex flex-col"
   >
+    @if (isDisplaying === "Technical"){
     <div
       class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-xl p-4 shadow-md text-white font-semibold flex items-center justify-center gap-8 mb-6"
     >
@@ -110,34 +214,50 @@
         class="flex flex-col items-center cursor-pointer hover:scale-110 transition-transform"
       >
         <i class="fa-solid fa-code text-3xl mb-1"></i>
-        <span class="text-sm">Frontend</span>
+        <span
+          [class]="'text-sm ' + (chosenSkill === 'React' || chosenSkill ==='Angular' || chosenSkill ==='React Native' || chosenSkill ==='Tailwind CSS' || chosenSkill ==='Framer Motion' ? 'bg-white text-black rounded-2xl p-2' : '')"
+          >Frontend</span
+        >
       </div>
       <div
         class="flex flex-col items-center cursor-pointer hover:scale-110 transition-transform"
       >
         <i class="fa-solid fa-server text-3xl mb-1"></i>
-        <span class="text-sm">Backend</span>
+        <span
+          [class]="'text-sm ' + (chosenSkill === 'ASP.NET' || chosenSkill ==='Node.js + Express' ? 'bg-white text-black rounded-2xl p-2' : '')"
+          >Backend</span
+        >
       </div>
       <div
         class="flex flex-col items-center cursor-pointer hover:scale-110 transition-transform"
       >
         <i class="fa-solid fa-database text-3xl mb-1"></i>
-        <span class="text-sm">Database</span>
+        <span
+          [class]="'text-sm ' + (chosenSkill === 'MySQL' || chosenSkill ==='SQL Server' ? 'bg-white text-black rounded-2xl p-2' : '')"
+          >Database</span
+        >
       </div>
     </div>
+    }@else{
+      <div
+      class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-xl p-4 shadow-md text-white font-semibold flex items-center justify-center gap-8 mb-6"
+    >
+      <div
+        class="flex flex-col items-center cursor-pointer hover:scale-110 transition-transform"
+      >
+        <i class="fa-solid fa-code text-3xl mb-1"></i>
+        <span
+          class="text-sm bg-white text-black rounded-2xl p-2"
+          >Soft Skills</span
+        >
+      </div>
+    </div>
+    }
     <div
       class="bg-white rounded-xl p-10 shadow-inner text-gray-800 flex flex-col justify-center items-center text-center flex-1"
     >
-      <h2 class="text-3xl font-bold mb-4 text-blue-600">
-        Frontend Development
-      </h2>
-      <p class="max-w-2xl text-lg leading-relaxed">
-        Specialized in <strong>Angular</strong> and <strong>TypeScript</strong>,
-        building dynamic, modular, and visually engaging interfaces. Passionate
-        about creating responsive and accessible user experiences using
-        <strong>Tailwind CSS</strong> and
-        <strong>modern UI design</strong> principles.
-      </p>
+      <h2 class="text-3xl font-bold mb-4 text-blue-600">{{chosenSkill}}</h2>
+      <p class="max-w-2xl text-lg leading-relaxed">{{description}}</p>
     </div>
   </div>
 </div>

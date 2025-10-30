@@ -35,40 +35,38 @@ export class Projects {
   logProject(project: number) {
     switch (project) {
       case 0:
-        console.log("Project 0 selected");
-        this.ProjectTitle = "Personal Portfolio";
-        this.BuildWith = "Angular, TypeScript, HTML, CSS";
-        this.Purpose = "Showcase my skills and projects to potential employers.";
-        this.Difficulties = "Designing a responsive layout and optimizing performance.";
-        this.LessonsLearned = "Improved my front-end development skills and learned about responsive design.";
-        this.Story = "Created a personal portfolio to highlight my work and experience in web development.";
+        this.ProjectTitle = "Music Store";
+        this.BuildWith = "Asp.Net (MVC), Bootstrap , Microsoft SQL Server";
+        this.Purpose = "Final test for my Intenship-Journey.A project to showcase my learning and my skills!";
+        this.Difficulties = "This was my first project so i had a lot of road-blocks.Without experience some things took a lot of time and they were not perfect at the and!";
+        this.Duration = "2 Months"
+        this.LessonsLearned = "Improved my back-end development skills and learned practical skills while working with .Net !";
+        this.Story = "After finishing my internship learning programme i had to put the knowledge i gained in test.This is my first project as a developer!";
         break;
       case 1:
-        console.log("Project 1 selected");
-         this.ProjectTitle = "E-commerce Website";
-        this.BuildWith = "React, Node.js, Express, MongoDB";
-        this.Purpose = "Provide a platform for users to buy and sell products online.";
-        this.Difficulties = "Implementing secure payment processing and managing inventory.";
-        this.LessonsLearned = "Gained experience in full-stack development and e-commerce solutions.";
-        this.Story = "Developed an e-commerce website to facilitate online shopping and transactions.";
+        this.ProjectTitle = "Cine Play";
+        this.BuildWith = "React, Node.js, Express, MySql";
+        this.Purpose = "Cine Play is a dynamic movie platform that allows users to stream films, leave reviews, and securely make payments — providing an engaging and seamless entertainment experience.";
+        this.Duration = "2.5 Months"
+        this.Difficulties = "Implementing secure and reliable payment processing.Managing complex movie inventory and user interactions efficiently.";
+        this.LessonsLearned = "Enhanced full-stack development skills, especially in building scalable systems and integrating e-commerce-style payment solutions.";
+        this.Story = "Cine Play started as an idea to blend entertainment with commerce — a space where users can not only enjoy watching movies but also interact, review, and support the platform through seamless transactions. The project evolved into a complete full-stack solution that strengthened both backend and frontend development expertise.";
         break;
       case 2:
-        console.log("Project 2 selected");
-        this.ProjectTitle = "Social Media App";
-        this.BuildWith = "Flutter, Dart, Firebase";
-        this.Purpose = "Connect users and allow them to share content and interact.";
-        this.Difficulties = "Building real-time features and ensuring data privacy.";
-        this.LessonsLearned = "Learned about mobile app development and real-time databases.";
-        this.Story = "Created a social media app to enable users to connect and share experiences.";
+        this.ProjectTitle = "Test Portfolio";
+        this.BuildWith = "React,FramerMotion";
+        this.Purpose = "Test Portfolio was my first React project, created right after completing several online courses. The main goal was to apply my newly gained knowledge in a practical way and strengthen my hands-on development experience!";
+        this.Difficulties = "Implementing real-time features with smooth performance.";
+        this.LessonsLearned = "Gained valuable insight into front-end architecture, animation using Framer Motion, and the fundamentals of real-time application development.";
+        this.Story = "This project began as a learning experiment and evolved into a fully functional social media-style app that allows users to connect and share experiences. It became a major milestone in my journey toward becoming a proficient React developer.";
         break;
       case 3:
-        console.log("Project 3 selected");
-        this.ProjectTitle = "Task Management Tool";
-        this.BuildWith = "Vue.js, Vuex, Vuetify";
-        this.Purpose = "Help users organize and manage their tasks efficiently.";
-        this.Difficulties = "Designing an intuitive user interface and implementing drag-and-drop functionality.";
-        this.LessonsLearned = "Enhanced my skills in Vue.js and state management.";
-        this.Story = "Built a task management tool to assist users in staying organized and productive.";
+        this.ProjectTitle = "Portfolio";
+        this.BuildWith = "Angular";
+        this.Purpose = "This Portfolio is my first project built with Angular — a personal website designed to showcase who I am, what I’ve learned, and the projects I’ve created. It reflects my journey as a developer and serves as a space to present my skills, experience, and creative approach.";
+        this.Difficulties = "Crafting an intuitive, responsive user interface.Implementing smooth animations and interactive drag-and-drop elements.";
+        this.LessonsLearned = "Deepened my understanding of Angular’s component-based structure, routing, and state management while improving my front-end design and UI/UX practices.";
+        this.Story = "This project started as an experiment to explore Angular but grew into a full personal portfolio website. It became the perfect way to express my identity as a developer — combining technical skill with creative presentation.";
         break;
       default:
         console.log("Unknown project");
