@@ -1,10 +1,12 @@
 <div class="min-h-screen flex items-center justify-center px-4">
-  <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-6xl w-full h-[100vh]">
-    <div class="grid grid-cols-6 grid-rows-6 gap-4 h-full">
+  <div
+    class="bg-white p-8 rounded-2xl shadow-2xl max-w-6xl w-full h-[100vh] max-sm:h-[250vh]"
+  >
+    <div class="grid grid-cols-6 grid-rows-6 gap-4 h-full max-sm:grid-rows-8">
       <div
         (mouseenter)="isHovered =true"
         (mouseleave)="isHovered=false"
-        class="relative col-span-4 group row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
+        class="relative max-sm:col-span-6  max-sm:row-span-1  col-span-4 group row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
       >
         <img
           src=""
@@ -59,7 +61,7 @@
       </div>
 
       <div
-        class="col-span-2 row-span-4 rounded-xl p-4 shadow-inner shadow-black/30 text-black font-bold flex flex-col items-start justify-center space-y-20"
+        class="max-sm:col-span-6 max-sm:row-span-2 col-span-2 row-span-4 rounded-xl p-4 shadow-inner shadow-black/30 text-black font-bold flex flex-col items-start justify-center space-y-20"
       >
         <h1
           class="text-2xl font-extrabold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent text-center bg-clip-text mb-6"
@@ -160,7 +162,7 @@
       </div>
 
       <div
-        class="col-span-2 row-span-4 rounded-xl p-4 shadow-inner shadow-black/30 text-black font-bold flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800"
+        class="max-sm:col-span-6 max-sm:row-span-2 col-span-2 row-span-4 rounded-xl p-4 shadow-inner shadow-black/30 text-black font-bold flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800"
       >
         <h1
           class="text-3xl bg-gradient-to-r from-white to-blue-500 bg-clip-text text-transparent mb-4 text-center"
@@ -175,7 +177,7 @@
       </div>
 
       <div
-        class="col-span-2 row-span-2 rounded-2xl p-6 shadow-2xl bg-white/10 backdrop-blur-lg text-white font-semibold flex flex-col items-center justify-center relative space-y-6 border border-white/20"
+        class="max-sm:col-span-6 col-span-2 row-span-2 rounded-2xl p-6 shadow-2xl bg-white/10 backdrop-blur-lg text-white font-semibold flex flex-col items-center justify-center relative space-y-6 border border-white/20"
       >
         <h2
           class="text-2xl text-center bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent animate-pulse drop-shadow-lg"
@@ -214,126 +216,100 @@
       </div>
 
       <div
-  class="col-span-4 row-span-2 rounded-xl p-6 shadow-inner shadow-black/40 text-white font-bold flex flex-col items-center justify-center bg-black/50 backdrop-blur-2xl border border-white/10 space-y-6"
->
+        class="max-sm:col-span-6 col-span-4 row-span-2 rounded-xl p-6 shadow-inner shadow-black/40 text-white font-bold flex flex-col items-center justify-center bg-black/50 backdrop-blur-2xl border border-white/10 space-y-6"
+      >
+        <div class="relative w-full max-w-5xl overflow-hidden">
+          <div class="flex space-x-7 animate-scroll" style="width: max-content">
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+              title="An amazing single sentence describing Project 1"
+            >
+              Payment System Architecture
+            </div>
 
-  <div class="relative w-full max-w-5xl overflow-hidden">
-  <div class="flex space-x-7 animate-scroll" style="width: max-content;">
-    <div
-      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-      title="An amazing single sentence describing Project 1"
-    >
-      Payment System Architecture
-    </div>
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+              title="An amazing single sentence describing Project 2"
+            >
+              E-commerce Platform Development
+            </div>
 
-    <div
-     class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-      title="An amazing single sentence describing Project 2"
-    >
-      E-commerce Platform Development
-    </div>
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+              title="An amazing single sentence describing Project 3"
+            >
+              Banking Application Design and Implementation
+            </div>
 
-    <div
-      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-      title="An amazing single sentence describing Project 3"
-    >
-      Banking Application Design and Implementation
-    </div>
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+              title="An amazing single sentence describing Project 4"
+            >
+              Microservices Architecture for Scalable Applications
+            </div>
 
-    <div
-    class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-      title="An amazing single sentence describing Project 4"
-    >
-      Microservices Architecture for Scalable Applications
-    </div>
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+              title="An amazing single sentence describing Project 5"
+            >
+              Upgrading Legacy Systems to Modern Frameworks
+            </div>
 
-    <div
-     class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-      title="An amazing single sentence describing Project 5"
-    >
-      Upgrading Legacy Systems to Modern Frameworks
-    </div>
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+              title="An amazing single sentence describing Project 6"
+            >
+              Api Development for Mobile Applications
+            </div>
 
-    <div
-     class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-      title="An amazing single sentence describing Project 6"
-    >
-      Api Development for Mobile Applications
-    </div>
+            <!-- duplicate for infinite scroll -->
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+              title="An amazing single sentence describing Project 1"
+            >
+              Payment System Architecture
+            </div>
 
-    <!-- duplicate for infinite scroll -->
-    <div
-      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-      title="An amazing single sentence describing Project 1"
-    >
-      Payment System Architecture
-    </div>
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+              title="An amazing single sentence describing Project 2"
+            >
+              E-commerce Platform Development
+            </div>
 
-    <div
-      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-      title="An amazing single sentence describing Project 2"
-    >
-      E-commerce Platform Development
-    </div>
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+              title="An amazing single sentence describing Project 3"
+            >
+              Banking Application Design and Implementation
+            </div>
 
-    <div
-      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-      title="An amazing single sentence describing Project 3"
-    >
-      Banking Application Design and Implementation
-    </div>
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+            >
+              Microservices Architecture for Scalable Applications
+            </div>
 
-    <div
-     class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-    >
-      Microservices Architecture for Scalable Applications
-    </div>
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+            >
+              Upgrading Legacy Systems to Modern Frameworks
+            </div>
 
-    <div
-      class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-    >
-      Upgrading Legacy Systems to Modern Frameworks
-    </div>
+            <div
+              class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50 flex items-center justify-center text-white font-semibold text-center px-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
+            >
+              Api Development for Mobile Applications
+            </div>
+          </div>
+        </div>
 
-    <div
-     class="h-32 w-60 rounded-2xl bg-gradient-to-br from-black via-grey-500 to-grey-900 shadow-lg shadow-cyan-400/50
-                 flex items-center justify-center text-white font-semibold text-center px-6
-                 transition-transform duration-300 hover:scale-110 hover:shadow-xl cursor-pointer select-none"
-    >
-      Api Development for Mobile Applications
-    </div>
-  </div>
-</div>
-
-   <h1 class="text-3xl text-start bg-gradient-to-r from-white via-blue-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-lg">
-    What i have been doing lately
-  </h1>
-
-</div>
-
-
+        <h1
+          class="text-3xl text-start max-sm:text-center bg-gradient-to-r from-white via-blue-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-lg"
+        >
+          What i have been doing lately
+        </h1>
+      </div>
     </div>
   </div>
 </div>

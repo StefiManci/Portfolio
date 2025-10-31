@@ -17,7 +17,7 @@
       </button>
     </div>
     @if(isDisplaying === 'Technical'){
-    <div class="grid grid-cols-3 gap-6 flex-1">
+    <div class="max-sm:grid-cols-1 max-sm:max-h-[100vh] max-sm:overflow-y-scroll grid grid-cols-3 gap-6 flex-1">
       <div
         class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
         (click)="setChosenSkill('ASP.NET')"
@@ -110,7 +110,7 @@
       </div>
     </div>
     }@else {
-    <div class="grid grid-cols-3 gap-6 flex-1">
+    <div class="max-sm:grid-cols-1 max-sm:max-h-[100vh] max-sm:overflow-y-scroll grid grid-cols-3 gap-6 flex-1">
       <div
         class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
         (click)="setChosenSkill('Problem Solving')"
@@ -254,9 +254,9 @@
     </div>
     }
     <div
-      class="bg-white rounded-xl p-10 shadow-inner text-gray-800 flex flex-col justify-center items-center text-center flex-1"
+      class="max-sm:max-h-[100vh] max-sm:overflow-y-scroll bg-white rounded-xl p-10 shadow-inner text-gray-800 flex flex-col justify-center items-center text-center flex-1"
     >
-      <h2 class="text-3xl font-bold mb-4 text-blue-600">{{chosenSkill}}</h2>
+      <h2 class="max-sm:mt-50 text-3xl font-bold mb-4 text-blue-600">{{chosenSkill}}</h2>
       <p class="max-w-2xl text-lg leading-relaxed">{{description}}</p>
     </div>
   </div>

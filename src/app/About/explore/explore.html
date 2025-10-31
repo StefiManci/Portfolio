@@ -1,13 +1,13 @@
-<div class="min-h-screen mt-10 flex items-center justify-center px-4">
-  <div class="bg-white p-8 rounded-2xl shadow-2xl w-4/6 h-[80vh]">
-    <div class="grid grid-cols-6 grid-rows-2 gap-4 h-full">
+<div class="max-sm:mt-0 min-h-screen mt-10 flex items-center justify-center px-4">
+  <div class="max-sm:w-full max-sm:h-[140vh] bg-white p-8 rounded-2xl shadow-2xl w-4/6 h-[80vh]">
+    <div class=" max-sm:grid-rows-7 grid grid-cols-6 grid-rows-2 gap-4 h-full">
       <div
         class="col-span-6 row-span-1 rounded-xl p-4 shadow-inner shadow-green-200 text-black font-bold flex items-center justify-center"
       >
         Explore & Find Out More About Me!
       </div>
       <div
-        class="col-span-2 row-span-2 rounded-xl shadow-inner shadow-green-200 text-black font-bold flex flex-col items-center justify-center hover:shadow-green-400 transition duration-300 ease-in-out cursor-pointer"
+        class="max-sm:col-span-6 col-span-2 row-span-2 rounded-xl shadow-inner shadow-green-200 text-black font-bold flex flex-col items-center justify-center hover:shadow-green-400 transition duration-300 ease-in-out cursor-pointer"
         (click)="navigateOnClick('/More', 'Tools')"
       >
         <app-tool-preview
@@ -18,13 +18,13 @@
       </div>
 
       <div
-        class="col-span-2 row-span-2 rounded-xl shadow-inner shadow-red-200 text-black font-bold flex flex-col items-center justify-center hover:shadow-red-400 transition duration-300 ease-in-out cursor-pointer"
+        class="max-sm:col-span-6 col-span-2 row-span-2 rounded-xl shadow-inner shadow-red-200 text-black font-bold flex flex-col items-center justify-center hover:shadow-red-400 transition duration-300 ease-in-out cursor-pointer"
         (click)="navigateOnClick('/More', 'Ability')"
       >
         <app-builds-preview></app-builds-preview>
       </div>
       <div
-        class="col-span-2 row-span-2 rounded-xl shadow-inner shadow-blue-200 text-black font-bold flex flex-col items-center justify-center hover:shadow-blue-400 transition duration-300 ease-in-out cursor-pointer"
+        class="max-sm:col-span-6 col-span-2 row-span-2 rounded-xl shadow-inner shadow-blue-200 text-black font-bold flex flex-col items-center justify-center hover:shadow-blue-400 transition duration-300 ease-in-out cursor-pointer"
         (click)="navigateOnClick('/More', 'Journey')"
       >
         <app-work-in-progress-preview></app-work-in-progress-preview>
