@@ -70,7 +70,7 @@ journeyData: ChartConfiguration<'line'>['data'] = {
 
     'Saas Products': 'Subscription-based web applications offering business tools, dashboards, and automation. Includes authentication, billing, and scalable architecture.',
 
-    'Web-Applications': 'General-purpose dynamic web apps — from dashboards and task managers to productivity tools — focused on clean UI, responsive design, and solid backend logic.',
+    'Web & Mobile Applications': 'General-purpose dynamic web apps — from dashboards and task managers to productivity tools — focused on clean UI, responsive design, and solid backend logic.',
   };
 
   this.abilityDescription = descriptions[ability] || 'Select an ability to see details.';

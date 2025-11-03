@@ -1,11 +1,15 @@
 <div class="min-h-screen mt-30 flex items-center justify-center px-4">
-  <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-6xl w-full h-[200vh]">
+  <div
+    class="bg-white p-8 rounded-2xl shadow-2xl max-w-6xl w-full h-[200vh] max-sm:h-[350vh]"
+  >
     <div class="grid grid-cols-6 grid-rows-8 gap-4 h-full">
       <div
         id="Journey"
-        class="relative col-span-6 group row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
+        class="max-sm:row-span-1 relative col-span-6 group row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
       >
-        <h2 class="text-2xl font-bold mb-4">My Journey Over the Years</h2>
+        <h2 class="max-sm:text-sm text-2xl font-bold mb-4">
+          My Journey Over the Years
+        </h2>
         <div class="w-full h-[300px]">
           <canvas
             baseChart
@@ -18,62 +22,62 @@
       </div>
       <div
         id="Ability"
-        class="relative col-span-4 group row-span-2 p-2 rounded-xl shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
+        class="max-sm:col-span-6 relative col-span-4 group row-span-2 p-2 rounded-xl shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
       >
-        <div class="h-full w-full flex rounded-lg p-4">
+        <div class="max-sm:flex-col h-full w-full flex rounded-lg p-4">
           <div
-            class="h-full w-1/4 rounded-lg p-4 flex flex-col space-y-3 overflow-y-auto scrollbar-thin scrollbar-thumb-amber-600 scrollbar-track-amber-300"
-          >
+            class="max-sm:gap-3 max-sm:w-auto max-sm:overflow-x-scroll max-sm:flex-row max-sm:justify-center max-sm:items-center max-sm:overflow-y-none h-full w-1/4 rounded-lg p-4 flex flex-col space-y-3 overflow-y-auto scrollbar-thin scrollbar-thumb-amber-600 scrollbar-track-amber-300"
+          > 
             <button
-              class="py-2 px-3 bg-white/80 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              class="max-sm:h-30 max-sm:text-sm max-sm:shadow-2xl max-sm:ml-200 py-2 px-3 bg-white/80 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
               (click)="selectAbility('E-Commerce Stores')"
             >
               E-Commerce Stores
             </button>
             <button
-              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              class="max-sm:h-30 max-sm:text-sm max-sm:shadow-2xl py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
               (click)="selectAbility('Customer Portals / CRM System')"
             >
               Customer Portals / CRM System
             </button>
             <button
-              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              class="max-sm:h-30 max-sm:text-sm max-sm:shadow-2xl py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
               (click)="selectAbility('Analytics Dashboards')"
             >
               Analytics Dashboards
             </button>
             <button
-              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              class="max-sm:h-30 max-sm:text-sm max-sm:shadow-2xl py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
               (click)="selectAbility('Authentication & User Management Systems')"
             >
               Authentication & User Management Systems
             </button>
             <button
-              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              class="max-sm:h-30 max-sm:text-sm max-sm:shadow-2xl py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
               (click)="selectAbility('RESTful & GraphQL APIs')"
             >
               RESTful & GraphQL APIs
             </button>
             <button
-              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              class="max-sm:h-30 max-sm:text-sm max-sm:shadow-2xl py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
               (click)="selectAbility('Microservices Architecture Projects')"
             >
               Microservices Architecture Projects
             </button>
             <button
-              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              class="max-sm:h-30 max-sm:text-sm max-sm:shadow-2xl py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
               (click)="selectAbility('Banking & FinTech Platforms')"
             >
               Banking & FinTech Platforms
             </button>
             <button
-              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              class="max-sm:h-30 max-sm:text-sm max-sm:shadow-2xl py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
               (click)="selectAbility('Saas Products')"
             >
               Saas Products
             </button>
             <button
-              class="py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
+              class="max-sm:h-30 max-sm:text-sm max-sm:shadow-2xl py-2 px-3 bg-white/60 rounded-md font-semibold text-black hover:shadow-2xs hover:shadow-black transition"
               (click)="selectAbility('Web & Mobile Applications')"
             >
               Web & Mobile Applications
@@ -82,7 +86,7 @@
 
           @if (chosenAbility ==="") {
           <div
-            class="h-full w-3/4 rounded-lg p-6 text-black flex flex-col justify-center items-center"
+            class="max-sm:w-full h-full w-3/4 rounded-lg p-6 text-black flex flex-col justify-center items-center"
           >
             <h2 class="text-2xl font-bold mb-2">Welcome</h2>
             <p class="text-blue-600 text-center">
@@ -91,12 +95,12 @@
           </div>
           } @else {
           <div
-            class="h-full w-3/4 rounded-lg p-6 text-white flex flex-col justify-start items-center"
+            class="max-sm:w-full h-full w-3/4 rounded-lg p-6 text-white flex flex-col justify-start items-center"
           >
-            <h2 class="text-3xl font-bold mb-4 text-blue-500">
+            <h2 class="max-sm:text-sm text-3xl font-bold mb-4 text-blue-500">
               {{chosenAbility}}
             </h2>
-            <p class="text-lg leading-relaxed text-black/90">
+            <p class="max-sm:text-sm text-lg leading-relaxed text-black/90">
               {{ abilityDescription }}
             </p>
           </div>
@@ -105,7 +109,7 @@
       </div>
       <div
         id="Tools"
-        class="relative col-span-2 row-span-5 rounded-xl p-6 shadow-inner shadow-black/30 bg-white/60 backdrop-blur-md text-gray-900 font-semibold overflow-hidden"
+        class="max-sm:col-span-6 relative col-span-2 row-span-5 rounded-xl p-6 shadow-inner shadow-black/30 bg-white/60 backdrop-blur-md text-gray-900 font-semibold overflow-hidden"
       >
         <h2 class="text-xl font-bold mb-2 text-center">My Tools</h2>
 
@@ -152,7 +156,7 @@
 
       <div
         id="ComingSoon"
-        class="relative col-span-4 row-span-3 rounded-xl p-6 bg-white/60 backdrop-blur-md shadow-inner shadow-black/20 text-gray-900 font-semibold flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6"
+        class="max-sm:col-span-6 relative col-span-4 row-span-3 rounded-xl p-6 bg-white/60 backdrop-blur-md shadow-inner shadow-black/20 text-gray-900 font-semibold flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6"
       >
         <div
           class="w-full md:w-1/2 h-48 md:h-64 bg-gray-300 rounded-lg flex items-center justify-center"
