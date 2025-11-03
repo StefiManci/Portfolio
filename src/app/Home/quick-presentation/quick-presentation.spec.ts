@@ -20,4 +20,6 @@ describe('QuickPresentation', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  
 });

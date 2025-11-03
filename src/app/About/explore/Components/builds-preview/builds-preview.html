@@ -7,7 +7,7 @@
     class="h-1/5 w-full p-3 flex justify-center items-center border-b-2 border-black"
   >
     <h2
-      class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 drop-shadow-md"
+      class="max-md:text-xs font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 drop-shadow-md"
     >
       {{ currentWord }}
     </h2>
@@ -21,7 +21,9 @@
         {{softwareWords[currentWordIndex-4] }}
       </p>
       }@else {
-      <p>Click Me For The Full Information Or Just Hover And See the Preview</p>
+      <p class="max-md:text-sm">
+        Click Me For The Full Information Or Just Hover And See the Preview
+      </p>
       }
     </div>
   </div>

@@ -180,7 +180,7 @@
         class="max-sm:col-span-6 col-span-2 row-span-2 rounded-2xl p-6 shadow-2xl bg-white/10 backdrop-blur-lg text-white font-semibold flex flex-col items-center justify-center relative space-y-6 border border-white/20"
       >
         <h2
-          class="text-2xl text-center bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent animate-pulse drop-shadow-lg"
+          class="max-md:text-sm text-2xl text-center bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent animate-pulse drop-shadow-lg"
         >
           Let's Connect! | Let`s Work and Grow Together
         </h2>
@@ -204,7 +204,11 @@
                 d="M8 16h8m-4-4h4m-6 8h6a2 2 0 002-2V8a2 2 0 00-2-2h-2.586A2 2 0 0112 5.414L10.586 4H8a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
-            stefi.manci1&#64;gmail.com
+            @if(isWideScreen){
+              Stefi
+            }@else{
+              stefi.manci1&#64;gmail.com
+            }
           </button>
 
           @if (copied) {
@@ -305,7 +309,7 @@
         </div>
 
         <h1
-          class="text-3xl text-start max-sm:text-center bg-gradient-to-r from-white via-blue-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-lg"
+          class="max-md:text-sm text-3xl text-start max-sm:text-center bg-gradient-to-r from-white via-blue-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-lg"
         >
           What i have been doing lately
         </h1>
