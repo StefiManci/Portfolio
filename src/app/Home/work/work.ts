@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ProjectPreview } from "./project-preview/project-preview";
 import { ProjectPreviewInfo } from "./project-preview-info/project-preview-info";
 

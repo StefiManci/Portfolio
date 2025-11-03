@@ -6,7 +6,7 @@
       <div
         (mouseenter)="isHovered =true"
         (mouseleave)="isHovered=false"
-        class="relative max-sm:col-span-6  max-sm:row-span-1  col-span-4 group row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
+        class="relative max-sm:col-span-6 max-sm:row-span-1 col-span-4 group row-span-2 rounded-xl p-6 shadow-inner shadow-black/30 text-black font-semibold flex flex-col items-center justify-center space-y-4"
       >
         <img
           src=""
@@ -51,7 +51,7 @@
 
         @if(isHovered){
         <a
-          href="#"
+          routerLink="/Contact"
           class="mt-4 px-6 py-2 border border-black text-black rounded-lg font-semibold bg-white shadow-md opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-lg hover:scale-105"
         >
           Get in touch
@@ -204,11 +204,7 @@
                 d="M8 16h8m-4-4h4m-6 8h6a2 2 0 002-2V8a2 2 0 00-2-2h-2.586A2 2 0 0112 5.414L10.586 4H8a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
-            @if(isWideScreen){
-              Stefi
-            }@else{
-              stefi.manci1&#64;gmail.com
-            }
+            @if(isWideScreen){ Stefi }@else{ stefi.manci1&#64;gmail.com }
           </button>
 
           @if (copied) {

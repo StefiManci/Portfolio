@@ -12,6 +12,7 @@ import { ProjectDetails } from "../project-details/project-details";
 export class Projects {
 
   projectNumber :number = 0;
+  
 
   ngOnInit() {
     this.logProject(this.projectNumber);

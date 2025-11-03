@@ -16,7 +16,7 @@ journeyData: ChartConfiguration<'line'>['data'] = {
     datasets: [
       {
         label: 'Milestones',
-        data: [1, 3, 6, 9, 12, 15,12],
+        data: [3, 4, 3, 5, 7, 15,12],
         borderColor: 'rgba(37,99,235,0.9)',
         backgroundColor: 'rgba(37,99,235,0.2)',
         fill: true,
@@ -35,7 +35,47 @@ journeyData: ChartConfiguration<'line'>['data'] = {
       legend: { display: false },
       tooltip: { enabled: true, callbacks:{
          label: function(context) {
-          const customLabels = ['Started', 'Progress', 'Review', 'Completed'];
+          const customLabels = [ [
+               'Started High School',
+               'First Introduction To Web Development',
+               'Started Learning HTML & CSS'
+           ],[ 
+    'Progress on HTML & CSS',
+    'Started Learning JavaScript',
+    'Built First Simple Website',
+    'Joined Online Coding Communities',
+    'Finished First High School Year'
+  ],[
+    'Completed JavaScript Basics',
+    'Took on Math And Science Courses',
+    'Finished Second High School Year'
+  ],[
+    'Html,Css & JavaScript Proficient',
+    'Deepened Understanding of Web Dev',
+    'First Introduction To C Programming',
+    'First C Mini-App Developed',
+    'Graduated High School',
+  ],[
+    'Started University',
+    'Learned Advanced C Concepts',
+    'Intro to Data Structures & Algorithms',
+    'Started First Udemy Course On Full-Stack Web Development',
+    'Intrduction To React.js,Node.js & Databases',
+    'Built Interactive Web Applications',
+    'Completed First Year of University',
+  ],[
+    'Finished C Language Basics',
+    'Started Learning C++/Java In University',
+    'Built Several Test Projects Using React.js & Node.js',
+    'Started Another Full-Stack Web Development Course',
+    'Started Contributing to Open Source Projects',
+    'Developed Problem-Solving Skills',
+    'Started My First Internship on Asp.Net Backend Development',
+    'Completed Second Year of University',
+  ],
+
+
+   'Progress', 'Review', 'Completed'];
           return customLabels[context.dataIndex];
         }
       }},

@@ -1,8 +1,9 @@
 import { Component, HostListener, OnInit} from '@angular/core';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-quick-presentation',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './quick-presentation.html',
   styleUrl: './quick-presentation.css'
 })

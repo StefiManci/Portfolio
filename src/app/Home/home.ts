@@ -14,4 +14,5 @@ import { Footer } from "../Shared/footer/footer";
 })
 export class Home {
 
+
 }
