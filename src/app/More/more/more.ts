@@ -72,6 +72,15 @@ journeyData: ChartConfiguration<'line'>['data'] = {
     'Developed Problem-Solving Skills',
     'Started My First Internship on Asp.Net Backend Development',
     'Completed Second Year of University',
+  ],[
+    'Finished My Internship',
+    'Deep Dive on Asp.Net Core & MVC & Web API',
+    'Built Several Projects Using Asp.Net Core',
+    'Started My First Job As A Junior Full-Stack Developer',
+    'Started Learning Angular Framework Online/Job',
+    'Improved My Skills in Frontend & Backend Development',
+    'Improved My Understanding of Software Development Life Cycle And Scalability',
+    'Completed Third Year of University',
   ],
 
 
