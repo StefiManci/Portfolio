@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^20.0.4",
     "@angular/common": "^20.0.0",
     "@angular/compiler": "^20.0.0",
     "@angular/core": "^20.0.0",
@@ -25,6 +26,7 @@
     "rxjs": "~7.8.0",
     "tailwindcss": "^4.1.10",
     "tslib": "^2.3.0",
+    "typewriter-effect": "^2.22.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
