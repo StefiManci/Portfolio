@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Footer } from '../../Shared/footer/footer';
 
 @Component({
@@ -8,6 +8,8 @@ import { Footer } from '../../Shared/footer/footer';
   styleUrl: './skills.css'
 })
 export class Skills {
+
+@ViewChild('descriptionSection') descriptionSection!: ElementRef;
 
 isDisplaying : string = "Technical"
 chosenSkill : string = ""
@@ -219,6 +221,9 @@ This focus minimizes bugs, improves reliability, and creates a professional and 
   default:
     this.description = '';
 }
+setTimeout(() => {
+      this.descriptionSection.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 50);
 
 }
 

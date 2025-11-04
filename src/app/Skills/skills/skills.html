@@ -17,19 +17,22 @@
       </button>
     </div>
     @if(isDisplaying === 'Technical'){
-    <div class="max-sm:grid-cols-1 max-sm:max-h-[100vh] max-sm:overflow-y-scroll grid grid-cols-3 gap-6 flex-1">
+    <div
+      class="max-sm:grid-cols-1 max-sm:max-h-[100vh] max-sm:overflow-y-scroll grid grid-cols-3 gap-6 flex-1"
+    >
       <div
-        class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        [class]="'bg-gradient-to-br bg-black rounded-xl p-6 flex flex-col items-center justify-center ' + (chosenSkill === 'ASP.NET' ? 'bg-white text-black border-blue-400 border-4 ' : 'text-white')"
         (click)="setChosenSkill('ASP.NET')"
       >
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aspnet/aspnet-original.svg"
-          class="w-12 h-12 mb-3"
-        />
+        <i
+          class="devicon-dot-net-plain-wordmark mb-3"
+          style="font-size: 48px"
+        ></i>
+
         <p class="font-semibold">ASP.NET</p>
       </div>
       <div
-        class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        [class]="'bg-gradient-to-br bg-black rounded-xl p-6 flex flex-col items-center justify-center ' + (chosenSkill === 'Node.js + Express' ? 'bg-white text-black border-blue-400 border-4 ' : 'text-white')"
         (click)="setChosenSkill('Node.js + Express')"
       >
         <img
@@ -39,7 +42,7 @@
         <p class="font-semibold">Node.js + Express</p>
       </div>
       <div
-        class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        [class]="'bg-gradient-to-br bg-black rounded-xl p-6 flex flex-col items-center justify-center ' + (chosenSkill === 'React' ? 'bg-white text-black border-blue-400 border-4 ' : 'text-white')"
         (click)="setChosenSkill('React')"
       >
         <img
@@ -49,7 +52,7 @@
         <p class="font-semibold">React</p>
       </div>
       <div
-        class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        [class]="'bg-gradient-to-br bg-black rounded-xl p-6 flex flex-col items-center justify-center ' + (chosenSkill === 'Angular' ? 'bg-white text-black border-blue-400 border-4 ' : 'text-white')"
         (click)="setChosenSkill('Angular')"
       >
         <img
@@ -59,7 +62,7 @@
         <p class="font-semibold">Angular</p>
       </div>
       <div
-        class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        [class]="'bg-gradient-to-br bg-black rounded-xl p-6 flex flex-col items-center justify-center ' + (chosenSkill === 'React Native' ? 'bg-white text-black border-blue-400 border-4 ' : 'text-white')"
         (click)="setChosenSkill('React Native')"
       >
         <img
@@ -69,7 +72,7 @@
         <p class="font-semibold">React Native</p>
       </div>
       <div
-        class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        [class]="'bg-gradient-to-br bg-black rounded-xl p-6 flex flex-col items-center justify-center ' + (chosenSkill === 'SQL Server' ? 'bg-white text-black border-blue-400 border-4 ' : 'text-white')"
         (click)="setChosenSkill('SQL Server')"
       >
         <img
@@ -79,7 +82,7 @@
         <p class="font-semibold">SQL Server</p>
       </div>
       <div
-        class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        [class]="'bg-gradient-to-br bg-black rounded-xl p-6 flex flex-col items-center justify-center ' + (chosenSkill === 'MySQL' ? 'bg-white text-black border-blue-400 border-4 ' : 'text-white')"
         (click)="setChosenSkill('MySQL')"
       >
         <img
@@ -89,30 +92,34 @@
         <p class="font-semibold">MySQL</p>
       </div>
       <div
-        class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        [class]="'bg-gradient-to-br bg-black rounded-xl p-6 flex flex-col items-center justify-center ' + (chosenSkill === 'Tailwind CSS' ? 'bg-white text-black border-blue-400 border-4 ' : 'text-white')"
         (click)="setChosenSkill('Tailwind CSS')"
       >
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-          class="w-12 h-12 mb-3"
-        />
+        <i
+          class="devicon-tailwindcss-original mb-3"
+          style="font-size: 48px"
+        ></i>
+
         <p class="font-semibold">Tailwind CSS</p>
       </div>
       <div
-        class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white"
+        [class]="'bg-gradient-to-br rounded-xl p-6 flex flex-col items-center justify-center ' + (chosenSkill === 'Framer Motion' ? 'bg-white text-black border-blue-400 border-4 ' : 'bg-black text-white')"
         (click)="setChosenSkill('Framer Motion')"
       >
-        <img
-          src="https://raw.githubusercontent.com/framer/motion/main/logo/motion-icon.svg"
-          class="w-12 h-12 mb-3"
-        />
+        <i
+          class="devicon-framermotion-original mb-3"
+          style="font-size: 48px"
+        ></i>
+
         <p class="font-semibold">Framer Motion</p>
       </div>
     </div>
     }@else {
-    <div class="max-sm:grid-cols-1 max-sm:max-h-[100vh] max-sm:overflow-y-scroll grid grid-cols-3 gap-6 flex-1">
+    <div
+      class="max-sm:grid-cols-1 max-sm:max-h-[100vh] max-sm:overflow-y-scroll grid grid-cols-3 gap-6 flex-1"
+    >
       <div
-        class="bg-gradient-to-br from-blue-600 to-indigo-800 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        [class]="'bg-gradient-to-br rounded-xl p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:scale-105 transition-transform '+ (chosenSkill === 'Problem Solving' ? 'bg-white text-black border-blue-400 border-4 ' : 'bg-black text-white')"
         (click)="setChosenSkill('Problem Solving')"
       >
         <h3 class="text-2xl font-bold">Problem Solving</h3>
@@ -122,7 +129,7 @@
       </div>
 
       <div
-        class="bg-gradient-to-br from-green-600 to-emerald-800 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        [class]="'bg-gradient-to-br rounded-xl p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:scale-105 transition-transform '+ (chosenSkill === 'Communication' ? 'bg-white text-black border-blue-400 border-4 ' : 'bg-black text-white')"
         (click)="setChosenSkill('Communication')"
       >
         <h3 class="text-2xl font-bold">Communication</h3>
@@ -130,7 +137,7 @@
       </div>
 
       <div
-        class="bg-gradient-to-br from-cyan-500 to-blue-700 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        [class]="'bg-gradient-to-br rounded-xl p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:scale-105 transition-transform '+ (chosenSkill === 'Teamwork' ? 'bg-white text-black border-blue-400 border-4 ' : 'bg-black text-white')"
         (click)="setChosenSkill('Teamwork')"
       >
         <h3 class="text-2xl font-bold">Teamwork</h3>
@@ -140,7 +147,7 @@
       </div>
 
       <div
-        class="bg-gradient-to-br from-orange-500 to-amber-700 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        [class]="'bg-gradient-to-br rounded-xl p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:scale-105 transition-transform '+ (chosenSkill === 'Adaptability' ? 'bg-white text-black border-blue-400 border-4 ' : 'bg-black text-white')"
         (click)="setChosenSkill('Adaptability')"
       >
         <h3 class="text-2xl font-bold">Adaptability</h3>
@@ -150,7 +157,7 @@
       </div>
 
       <div
-        class="bg-gradient-to-br from-purple-600 to-violet-800 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        [class]="'bg-gradient-to-br rounded-xl p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:scale-105 transition-transform '+ (chosenSkill === 'Time Management' ? 'bg-white text-black border-blue-400 border-4 ' : 'bg-black text-white')"
         (click)="setChosenSkill('Time Management')"
       >
         <h3 class="text-2xl font-bold">Time Management</h3>
@@ -160,7 +167,7 @@
       </div>
 
       <div
-        class="bg-gradient-to-br from-pink-600 to-rose-800 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        [class]="'bg-gradient-to-br rounded-xl p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:scale-105 transition-transform '+ (chosenSkill === 'Leadership' ? 'bg-white text-black border-blue-400 border-4 ' : 'bg-black text-white')"
         (click)="setChosenSkill('Leadership')"
       >
         <h3 class="text-2xl font-bold">Leadership</h3>
@@ -170,7 +177,7 @@
       </div>
 
       <div
-        class="bg-gradient-to-br from-teal-500 to-cyan-700 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        [class]="'bg-gradient-to-br rounded-xl p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:scale-105 transition-transform '+ (chosenSkill === 'Critical Thinking' ? 'bg-white text-black border-blue-400 border-4 ' : 'bg-black text-white')"
         (click)="setChosenSkill('Critical Thinking')"
       >
         <h3 class="text-2xl font-bold">Critical Thinking</h3>
@@ -180,7 +187,7 @@
       </div>
 
       <div
-        class="bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        [class]="'bg-gradient-to-br rounded-xl p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:scale-105 transition-transform '+ (chosenSkill === 'Creativity' ? 'bg-white text-black border-blue-400 border-4 ' : 'bg-black text-white')"
         (click)="setChosenSkill('Creativity')"
       >
         <h3 class="text-2xl font-bold">Creativity</h3>
@@ -190,7 +197,7 @@
       </div>
 
       <div
-        class="bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl p-6 flex flex-col items-center justify-center text-white text-center cursor-pointer hover:scale-105 transition-transform"
+        [class]="'bg-gradient-to-br rounded-xl p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:scale-105 transition-transform '+ (chosenSkill === 'Attention to Detail' ? 'bg-white text-black border-blue-400 border-4 ' : 'bg-black text-white')"
         (click)="setChosenSkill('Attention to Detail')"
       >
         <h3 class="text-2xl font-bold">Attention to Detail</h3>
@@ -202,7 +209,10 @@
     }
   </div>
 </div>
-<div class="min-h-screen mt-10 flex items-center justify-center px-4">
+<div
+  #descriptionSection
+  class="min-h-screen mt-10 flex items-center justify-center px-4"
+>
   <div
     class="bg-white p-8 rounded-2xl shadow-2xl max-w-6xl w-full h-[100vh] flex flex-col"
   >
@@ -239,15 +249,14 @@
       </div>
     </div>
     }@else{
-      <div
+    <div
       class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-xl p-4 shadow-md text-white font-semibold flex items-center justify-center gap-8 mb-6"
     >
       <div
         class="flex flex-col items-center cursor-pointer hover:scale-110 transition-transform"
       >
         <i class="fa-solid fa-code text-3xl mb-1"></i>
-        <span
-          class="text-sm bg-white text-black rounded-2xl p-2"
+        <span class="text-sm bg-white text-black rounded-2xl p-2"
           >Soft Skills</span
         >
       </div>
@@ -256,7 +265,9 @@
     <div
       class="max-sm:max-h-[100vh] max-sm:overflow-y-scroll bg-white rounded-xl p-10 shadow-inner text-gray-800 flex flex-col justify-center items-center text-center flex-1"
     >
-      <h2 class="max-sm:mt-50 text-3xl font-bold mb-4 text-blue-600">{{chosenSkill}}</h2>
+      <h2 class="max-sm:mt-50 text-3xl font-bold mb-4 text-blue-600">
+        {{chosenSkill}}
+      </h2>
       <p class="max-w-2xl text-lg leading-relaxed">{{description}}</p>
     </div>
   </div>

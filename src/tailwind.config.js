@@ -32,11 +32,11 @@ module.exports = {
         "max-sm": { max: "639px" },
         "max-md": { max: "767px" },
         "max-lg": { max: "1023px" },
-        "max-xl": { max: "1279px" },
+        "max-xl": { max: "1400px" },
         "max-2xl": { max: "1535px" },
         "max-3xl": { max: "1919px" },
 
-         // Height-based breakpoints
+        // Height-based breakpoints
         "max-h-xs": { raw: "(max-height: 479px)" },
         "max-h-sm": { raw: "(max-height: 639px)" },
         "max-h-md": { raw: "(max-height: 767px)" },
