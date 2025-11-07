@@ -36,13 +36,7 @@ module.exports = {
         "max-2xl": { max: "1535px" },
         "max-3xl": { max: "1919px" },
 
-        // Height-based breakpoints
-        "max-h-xs": { raw: "(max-height: 479px)" },
-        "max-h-sm": { raw: "(max-height: 639px)" },
-        "max-h-md": { raw: "(max-height: 767px)" },
-        "max-h-lg": { raw: "(max-height: 1023px)" },
-        "min-h-md": { raw: "(min-height: 768px)" },
-        "min-h-lg": { raw: "(min-height: 1024px)" },
+        landscape: { raw: "(orientation: landscape)" },
       },
     },
   },

@@ -1,4 +1,7 @@
-
+@if (isLandscape) {
+<app-landscape></app-landscape>
+}@else {
 <app-navigation></app-navigation>
 
 <router-outlet></router-outlet>
+}
